@@ -1,6 +1,7 @@
 .my-card{
     box-shadow: var(--shadow);
     max-width: 400px;
+    width: 100vw;
     border-radius: 0.5rem;
     margin: 1rem;
     flex: 1;

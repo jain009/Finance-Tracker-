@@ -79,7 +79,10 @@ const DesignCharts = ({ sortedTransactions }) => {
         <Line {...lineConfig} />
       </div>
       <div className="chart-wrapper"
-         style={{width:"30%"}}>
+         style={{width:"30%",
+          // height:"20rem",
+          // overflow:"auto"
+         }}>
         <h2>Expense Categories</h2>
         <Pie  {...pieConfig} />
       </div>

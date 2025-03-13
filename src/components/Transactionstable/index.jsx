@@ -83,7 +83,7 @@ function TransactionTable({ transactions, addTransaction, fetchTransactions }) {
         style={{
           width: "95vw",
           padding: "0rem 2rem",
-          margin: "50px"
+          margin: "10px auto"
 
           // justifyContent: "evenly"
         }}
@@ -91,7 +91,10 @@ function TransactionTable({ transactions, addTransaction, fetchTransactions }) {
         <div
           style={{
             display: "flex",
-            // justifyContent: "space-between",
+            justifyContent: "center",
+               margin: "10px 10px",
+              //  display:"flex",
+              // right:"30%",
 
             gap: "item",
             alignItems: "center",
@@ -135,7 +138,8 @@ function TransactionTable({ transactions, addTransaction, fetchTransactions }) {
           style={{
             justifyContent: "center",
             alignItems: "center",
-            marginLeft: "35%",
+            // marginLeft: "35%",
+            margin:"10px auto"
           }}
           onChange={(e) => setSortKey(e.target.value)}
           value={sortKey}
@@ -155,12 +159,13 @@ function TransactionTable({ transactions, addTransaction, fetchTransactions }) {
           <button
   
              style={{
-               justifyContent: "center",
-               alignItems: "center",
+               justifyContent: "start",
+              //  alignItems: "center",
                position:"relative",
-             marginLeft: "50rem",
+              maxWidth:"10rem",               
+             margin: " auto 0",
              padding: "2rem 2rem",
-             width: "20rem"
+            //  width: "20rem"
             // padding:"30rem"
              }}
             className="btn"
@@ -172,8 +177,11 @@ function TransactionTable({ transactions, addTransaction, fetchTransactions }) {
         </div>
         <Table
           dataSource={sortTransactions}
-          style={{border:"2px solid rgb(41, 112, 255)" ,
-            margin:"5px"
+          style={{ 
+            margin:"2px",
+            Width:"100%",
+            // justifyContent:""
+            position:'sticky'
           }}
           columns={columns}
           rowKey={(record) => record.id || `${record.date}-${record.name}`} // Better key strategy
