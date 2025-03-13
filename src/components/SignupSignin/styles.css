@@ -1,0 +1,23 @@
+.signup-wrapper{
+    width: 70%;
+    max-width: 450px;
+    /* justify-content: center; */
+    align-items: center;
+    margin-left: 30%;
+    height: 97%;
+    /* display: flex; */
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    border-radius: 1rem 1.5rem;
+}
+.title{
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    
+}
+.p-login{
+    text-align: center;
+    margin: 0;
+    font-size:0.8rem ;
+}
